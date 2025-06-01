@@ -1,0 +1,518 @@
+ *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ }
+ .App-header{
+  width: 100%;
+  height: 70px;
+  text-decoration: none;
+  /* border-bottom: 1px solid rgb(157, 126, 126); */
+  position: fixed;
+  /* background-color: rgb(212, 209, 209); */
+
+  
+ 
+  
+ 
+ }
+ .App-header-search{
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(234, 229, 229);
+  height: 30px;
+  width: 150px;
+  margin-bottom: 5px;
+ }
+  
+ .App-header-titles-name{
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color:  rgb(251, 249, 249);
+  border-bottom: 1px solid rgb(251, 238, 230);
+  display: flex;
+  color: red;
+ 
+  
+ }
+ .App-header-titles{
+  display: flex;
+  align-items: center;
+  float: right;
+  outline: none;
+
+ }
+ .list-items{
+ display: flex;
+ text-decoration: none;
+ float: right;
+ 
+
+ }
+ .App-header-titles-list{
+ align-items: center;
+ padding-left: 50px;
+ padding-right: 20px;
+ padding-bottom: 5px;
+ color: rgb(27, 23, 23);
+ font-weight: bold;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+ }
+
+ .App-header1{
+  border-bottom: 2px solid red;
+  opacity: 0.4;
+ }
+ .App-header1:hover{
+  border-bottom: 2px solid green;
+ }
+
+/* CSS Styling for the Herosection .......................fot the  dispalying of the latest News and other features*/
+
+.App-hero-container{
+  width: 100%;
+  height: 700px;
+  /* background-color: red; */
+  display: flex;
+  gap: 5px;
+ /* position: inherit; */
+ /* margin-left: 50px; */
+ 
+  
+ 
+}
+.App-hero-items0{
+  width: 15%;
+  height: 700px;
+  /* background-color: rgb(221, 205, 205); */
+  margin-left: 5px;
+  margin-top: 10px;
+ 
+  
+}
+.App-trending-news-title{ 
+  font-weight: 900;
+}
+.App-hero-items1{
+  /* background-color: green; */
+  width: 700px;
+  height: 690px;
+  margin-top: 35px;
+  
+ 
+}
+.App-hero-items2{
+  background-color: white;
+  width: 630px;
+  height: 600px;
+  margin-top: 80px;
+ 
+ 
+
+}
+.App-News-category-hero-title{
+  color: black;
+   
+}
+.App-News-category-hero-title1{
+  color: black;
+  font-weight: 900;
+  font-size: 15px;
+}
+.App-hero-side-bar{
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+   
+}
+.App-hero-side-bar2{
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  
+  /* margin-top: 15px; */
+  margin-left: 10px;
+}
+.App-hero-side-side{
+  width: 690px;
+  height: 400px;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.App-hero-bottom-container{
+  width: 690px;
+  height: 400px;
+  margin-top: 2px;
+}
+.App-hero-bottom-side{
+ 
+  width: 342px;
+  height: 250px;
+  margin-left: 5px;
+  
+  
+}
+ 
+.App-bottom-bottom-container{
+  display: flex;
+ 
+ 
+  
+}
+.App-popular-topics{
+  width: 100%;
+  height: 160px;
+  background-color: rgb(249, 246, 246);
+  border-radius: 10px;
+  font-size: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  
+}
+.App-posts-displaty-image{
+  width: 105%;
+  height:300px;
+ 
+  
+ 
+
+  
+}
+.App-posts-displaty-image:hover{
+ transform: scale(0.9);
+}
+.App-posts-latest-image{
+  margin: 0px;
+  margin-left: 30px;
+  width:100%;
+  height: 200px;
+ 
+  
+}
+.App-posts-latest-image:hover{
+  transform: scale(0.9);
+}
+.App-latest-title{
+  padding-left: 26px;
+}
+
+.App-posts-trend-image{
+ 
+  height: 120px;
+
+}
+.App-posts-trend-image:hover{
+  transform: scale(0.9);
+}
+.App-post-trending-header-div{
+  display: flex;
+  width: 100%;
+}
+.App-trending-title{
+  padding-left: 10px;
+  display: inline-block;
+  height: 0px;
+  display: flex;
+}
+.App-ads-container{
+  width: 90%;
+  height: 600px;  
+  margin-top: 20px;
+  margin-left: 10px;
+  /* background-color: rgb(248, 244, 244); */
+   
+}
+.App-sidebar-Ads{
+  width: 150px;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 25px;
+  margin-left: 30px;
+  
+}
+.App-newest-iphone{
+  border: 1px solid white;
+  padding: 8px;
+  background-color: rgb(227, 224, 215);
+  outline: none;
+  color: red;
+  font-weight: 800;
+  font-size: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.App-connection{
+  display: flex;
+  /* padding: 10px; */
+  margin-left: 10px;
+
+}
+.App-connection-ul{
+  display: flex;
+  padding: 10px;
+  gap:30px;
+  text-decoration: none;
+
+}
+.App-words-connected{
+  background-color: black;
+  font-size: 20px;
+ 
+  border: 1px solid black;
+  outline: none;
+  color: white;
+}
+.App-stay-connected{
+ 
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 5px;
+ 
+
+}
+.App-text-deco{
+  text-decoration: none;
+  font-weight: 300;
+}
+.App-hero-popular{
+ 
+  width: 100%;
+  height: 200px;
+  margin-top: 25px;
+}
+.App-popular-News-all{
+  width: 100%;
+
+  margin-top: 10px;
+  height: 300px;
+  /* display: flex; */
+ 
+
+}
+.App-popular-news{
+  font: 20px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.App-popular-list-News{
+  margin-top: 30px;
+  background-color: white;
+ 
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+ 
+
+}
+.App-popular-list-News-add{
+  width: 100%;
+  height: 100px;
+  background-color: green;
+}
+
+.App-posts-pop-image{
+  display: flex;
+}
+.App-posts-pop-image{
+  transform: scale(0.9);
+  gap: 20px;
+}
+.App-posts-pop-images{
+  display: flex;
+  height: 295px;
+ 
+  width: 360px;
+  justify-content: space-between;
+}
+.App-posts-pop-images:hover{
+  transform: scale(0.9);
+}
+.App-posts-ads{
+  width: 100%;
+  height: 500px;
+
+  
+
+}
+.App-ads-resouces-container{
+   width: 98%;
+   height: 500px;
+   /* background-color: rgb(91, 89, 89); */
+   background-color: white;
+   margin-left: 12px;
+   display: flex;
+}
+.App-ads-resources{
+  width: 200px;
+  height: 500px; 
+  background-color: ghostwhite;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.App-ads-resources1{
+  width: 700px;
+  height: 500px;
+ 
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+.App-ads-resources2{
+  width: 400px;
+  height: 500px;
+ 
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.App-ads-resouces-list{
+  width: 90%;
+  height: 100px;
+  background-color: white;
+  margin-top: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.App-sidebar-Ads1{
+  height: 450px;
+  width: 450px;
+  margin-left: 30px;
+}
+.App-newest-iphone1{
+  border: 1px solid white;
+  padding: 8px;
+  background-color: rgb(227, 224, 215);
+  outline: none;
+  color: red;
+  font-weight: 800;
+  font-size: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  opacity: 0.5;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.App-ads-resouces-list1{
+  border-radius: 1px solid green;
+  padding: 10px;
+  color: white;
+  background-color: green;
+}
+.App-footer-surrounds{
+  background-color: rgb(5, 5, 37);
+  width: 100%;
+  height: 400px;
+ 
+  display: flex;
+  margin-top: 100px;
+}
+.App-footers-headers{
+  margin-top: 60px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+.App-lists-list{
+  padding-top: 20px;
+ 
+}
+.App-list-list-list{
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.App-display-News{
+  padding-top: 25px;
+}
+.App-display-News-sidebar{
+  width: 100%;
+  height: 600px;
+  
+  margin-top: 60px;
+  display: flex;
+}
+.App-display-News1{
+  width: 200px;
+  height: 500px;
+ 
+  
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.App-display-News2{
+  width: 700px;
+  height: 500px;
+ 
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.App-display-News3{
+  width: 450px;
+  height: 500px;
+ 
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.App-display-News-image{
+  width: 650px;
+  height: 350px;
+}.App-display-News{
+  height: 1000px;
+  width: 100%;
+  /* background-color: rgb(210, 208, 208); */
+  background-color: white;
+  border: 2px solid whitesmoke;
+  box-shadow: 5px 5px 5px rgb(207, 202, 202);
+  
+  
+}
+.App-display-News1{
+  height: fit-content;
+  width: 100%;
+  /* background-color: rgb(210, 208, 208); */
+  background-color: white;
+  border: 2px solid whitesmoke;
+  box-shadow: 5px 5px 5px rgb(207, 202, 202);
+  
+  
+}
+.App-display-link-imagessss{
+  text-decoration: none;
+  color: black;
+}
+.App-display-search{
+  top: 50px;
+  position: fixed;
+  width: 400px;
+  left: 200px;
+  height: fit-content;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  
+}
+.App-search-item-list{
+  padding-bottom: 8px;
+  word-spacing: 2px;
+}
+.App-header1{
+  text-decoration: none;
+  font-size: 900;
+  opacity: 1;
+}
+.App-read-more{
+  background-color: rgb(139, 38, 38) ;
+  outline: none;
+  border: 1px solid  rgb(139, 38, 38);
+  color: white;
+  border-radius: 5px;
+  padding: 5px ;
+}
+ 
