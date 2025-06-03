@@ -199,7 +199,7 @@ export default function Header() {
                 </div>
                 <div className='App-footers-headers'><h1>Review to us </h1>
 
-                    <input type='text'></input>
+                    <input type='text' className='Appp-input-info'></input>
                 </div>
                 
              </div>   
