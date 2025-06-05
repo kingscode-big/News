@@ -6,7 +6,7 @@ export default function Latest() {
 
     const[latest,setLatest]=useState([])
     useEffect(() => {
-                fetch('http://localhost:3000/api/posts/latest1') // Replace with your API
+                fetch('https://newsback-ylzh.onrender.com/api/posts/latest1') // Replace with your API
                   .then((res) => res.json())
                   .then((data) => setLatest(data))
                   .catch((err) => console.error('Error fetching posts:', err));

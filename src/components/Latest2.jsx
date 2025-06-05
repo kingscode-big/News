@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Latest2() {
     const[latest,setLatest]=useState([])
         useEffect(() => {
-                    fetch('http://localhost:3000/api/posts/latest2') // Replace with your API
+                    fetch('https://newsback-ylzh.onrender.com/api/posts/latest2') // Replace with your API
                       .then((res) => res.json())
                       .then((data) => setLatest(data))
                       .catch((err) => console.error('Error fetching posts:', err));
