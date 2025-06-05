@@ -21,7 +21,7 @@ export default function Posts() {
    
          e.preventDefault()
          if (input!=='') {
-           fetch(`http://localhost:3000/search/${input}`, {
+           fetch(`https://newsback-ylzh.onrender.com/search/${input}`, {
              method: 'GET',
              headers: {
                'Content-Type': 'application/json'
@@ -31,7 +31,8 @@ export default function Posts() {
              .then(data => {
                setResult(data);
                 
-             
+            
+
                
              })
              .catch(err => {
@@ -49,7 +50,7 @@ export default function Posts() {
 
 
    useEffect(() => {
-    fetch(`http://localhost:3000/api/post/${id}`)
+    fetch(`https://newsback-ylzh.onrender.com/api/post/${id}`)
       .then(res => res.json())
       .then(data => setPost(data))
       .catch(err => console.error('Fetch single post error:', err));
