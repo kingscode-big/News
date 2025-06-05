@@ -8,7 +8,7 @@ export default function Topics() {
      const[latest,setLatest]=useState([])
 
      useEffect(() => {
-                        fetch('http://localhost:3000/api/posts') // Replace with your API
+                        fetch('https://newsback-ylzh.onrender.com/api/posts') // Replace with your API
                           .then((res) => res.json())
                           .then((data) => setLatest(data))
                           .catch((err) => console.error('Error fetching posts:', err));

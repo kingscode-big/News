@@ -24,7 +24,7 @@ export default function Header() {
 
       e.preventDefault()
       if (input!=='') {
-        fetch(`http://localhost:3000/search/${input}`, {
+        fetch(`https://newsback-ylzh.onrender.com/search/${input}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'

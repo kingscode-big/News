@@ -13,7 +13,7 @@ export default function Category() {
   const [error, setError] = useState('');
 
     useEffect(() => {
-    fetch(`http://localhost:3000/api/category/${category}`)
+    fetch(`https://newsback-ylzh.onrender.com/category/${category}`)
       .then(res => {
         if (!res.ok) throw new Error('No posts found');
         return res.json();
@@ -87,7 +87,8 @@ export default function Category() {
                                    <h3>{post.category}</h3>
                                   
                                     <img
-                                      src={`http://localhost:3000/upload/${post.imageUrl}`}
+                                      src={post.imageUrl}
+
                                       alt={post.title}
                                       className='App-display-News-image'
                                       

@@ -14,7 +14,7 @@ export default function Search() {
   
         e.preventDefault()
         if (e.target.value!=='') {
-          fetch(`http://localhost:3000/search/${query}`, {
+          fetch(`https://newsback-ylzh.onrender.com/search/${query}`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json'

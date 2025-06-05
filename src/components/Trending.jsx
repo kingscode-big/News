@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Trending() {
     const[latest,setLatest]=useState([])
         useEffect(() => {
-                    fetch('http://localhost:3000/api/posts/trending') // Replace with your API
+                    fetch('https://newsback-ylzh.onrender.com/api/posts/trending') // Replace with your API
                       .then((res) => res.json())
                       .then((data) => setLatest(data))
                       .catch((err) => console.error('Error fetching posts:', err));
@@ -18,7 +18,8 @@ export default function Trending() {
        <div  className='App-post-trending-header-div'> 
        <Link className='App-display-link-imagessss' to={`/api/post/${post._id}`}> 
         <img
-          src={`http://localhost:3000/upload/${post.imageUrl}`}
+          src={post.imageUrl}
+
           alt={post.title}
         //   style={{ width: '100px', height: 'auto', objectFit: 'cover', }}
           className='App-posts-trend-image'

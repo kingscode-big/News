@@ -6,7 +6,7 @@ export default function BlogPosts() {
     const[posts,setPosts]= useState([])
     
         useEffect(() => {
-            fetch('http://localhost:3000/api/posts/latest') // Replace with your API
+            fetch('https://newsback-ylzh.onrender.com/api/posts/latest') // Replace with your API
               .then((res) => res.json())
               .then((data) => setPosts(data))
               .catch((err) => console.error('Error fetching posts:', err));
@@ -20,7 +20,8 @@ export default function BlogPosts() {
        
        <Link className='App-display-link-imagessss' to={`/api/post/${post._id}`}> 
         <img
-          src={`http://localhost:3000/upload/${post.imageUrl}`}
+          src={post.imageUrl}
+
           alt={post.title}
         //   style={{ width: '100px', height: 'auto', objectFit: 'cover', }}
           className='App-posts-displaty-image'

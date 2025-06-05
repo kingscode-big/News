@@ -107,7 +107,8 @@ export default function Posts() {
             <h2>{post.title}</h2>
         
             <img
-                src={`http://localhost:3000/upload/${post.imageUrl}`}
+                src={post.imageUrl}
+
                 alt={post.title}
                  className='App-display-News-image'
             />

@@ -20,7 +20,8 @@ export default function Latest() {
       <div key={post._id} style={{ borderBottom: '1px solid #ccc' }}>
          <Link className='App-display-link-imagessss' to={`/api/post/${post._id}`}> 
         <img
-          src={`http://localhost:3000/upload/${post.imageUrl}`}
+          src={post.imageUrl}
+
           alt={post.title}
         //   style={{ width: '100px', height: 'auto', objectFit: 'cover', }}
           className='App-posts-latest-image'

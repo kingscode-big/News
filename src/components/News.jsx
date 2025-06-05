@@ -21,7 +21,8 @@ export default function News() {
         
         <Link className='App-display-link-imagessss' to={`/api/post/${post._id}`}> 
         <img
-          src={`http://localhost:3000/upload/${post.imageUrl}`}
+       src={post.imageUrl || '/default-image.jpg'}
+
           alt={post.title}
         //   style={{ width: '100px', height: 'auto', objectFit: 'cover', }}
           className='App-posts-pop-images'
