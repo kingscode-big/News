@@ -681,73 +681,296 @@
     font-size: 8px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  /* General layout adjustments */
-  .App-hero-container,
-  .App-bottom-bottom-container,
-  .App-ads-resouces-container,
-  .App-display-News-sidebar {
+ 
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  /* Styles for devices between 401px and 500px */
+
+  .App-header {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    position: static;
+  }
+
+  .App-header-search {
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .App-header-titles,
+  .list-items {
+    display: none;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 22px;
+  }
+
+  .App-hero-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .App-hero-items0 {
+    display: none;
+  }
+
+  .App-hero-items1,
+  .App-hero-items2 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 10px; 
+  }
+
+  .App-display {
+    font-size: 12px;
+ 
+    padding: 5px;
+  
+  }
+
+  .App-latest-title {
+    font-size: 10px;
+   
+  }
+  .App-stay-connected{
+    margin-bottom: 100px;
+  }
+  
+  .App-connection-ul {
+    display: flex;
+    margin-top: 10px;
+    padding: 0;
+    margin-left: 5px;
+  }
+  
+  
+  .App-popular-topics{
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+   .App-posts-latest-image{
+     width: 100%;
+    height: 180px;
+   
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+   }
+  .App-posts-trend-image{
+     width: 550px;
+    height: 180px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+
+  }
+  .App-posts-pop-images{
+    padding-top: 50px;
+    width: 150px;
+    margin: 0px;
+    box-sizing:border-box;
+    height: 200px;
+    
+  }
+  .App-posts-displaty-image{
+    margin-bottom: 0px;
+  }
+  
+  .App-display-News-image {
+    width: 100%;
+    height: 180px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  .App-footer-surrounds {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 8px;
+    border-radius: 12px;
+  }
+
+  .App-footers-headers {
+    margin: 8px 0;
+    font-size: 14px;
+    gap: 12px;
+  }
+
+  .Appp-input-info {
+    flex-direction: column;
+    width: 70px;
+    height: 55px;
+  }
+  .App-trending-title{
+    padding: 0px;
+    
+  
+  }
+
+  .App-connection-ul {
+    display: flex;
+ 
+    padding: 0;
+    margin-left: 5px;
+  }
+
+  .App-ads-resouces-container {
     flex-direction: column;
     align-items: center;
     height: auto;
   }
 
-  /* Adjust widths */
-  .App-hero-items0,
-  .App-hero-items1,
-  .App-hero-items2,
-  .App-ads-resources,
   .App-ads-resources1,
-  .App-ads-resources2,
-  .App-display-News1,
-  .App-display-News2,
-  .App-display-News3 {
-    width: 90%;
-    margin: 10px auto;
+  .App-ads-resources2 {
+    display: none;
+  }
+
+  .App-ads-resources,
+  .App-sidebar-Ads1 {
+    width: 100%;
+    margin: 10px 0;
     height: auto;
   }
 
-  /* Header adjustments */
-  .App-header-titles {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .App-display-search {
+    width: 85%;
+    left: 20px;
+    padding: 10px;
+  }
+
+  .App-read-more {
+    width: fit-content;
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .App-list-list-list {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  /* General layout adjustments */
+  .App-header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .App-header-search {
-    width: 60%;
+    width: 90%;
     margin: 10px 0;
   }
 
-  /* Image adjustments */
-  .App-posts-displaty-image,
-  .App-posts-latest-image,
-  .App-posts-trend-image,
-  .App-display-News-image {
-    width: 100%;
+  .App-header-titles,
+  .list-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App-hero-container {
+    flex-direction: column;
+    gap: 20px;
     height: auto;
   }
 
-  /* Footer layout */
-  .App-footer-surrounds {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .App-hero-items0 {
+    display: none;
+  }
+
+  .App-hero-items1,
+  .App-hero-items2 {
+    width: 100%;
     height: auto;
-    padding: 20px;
+    margin-left: 0;
+  }
+
+  .App-display {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .App-latest-title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .App-posts-trend-image,
+  .App-posts-displaty-image,
+  .App-posts-latest-image,
+  .App-display-News-image {
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    object-fit: cover;
+  }
+
+  .App-footer-surrounds {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 12px;
+    flex-direction: column;
   }
 
   .App-footers-headers {
-    width: 45%;
     margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
   }
 
-  /* Responsive search modal */
-  .App-display-search{
-    width:10% ;
-    left: 20px;
+  .Appp-input-info {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .App-connection-ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .App-ads-resouces-container,
+  .App-sidebar-Ads1,
+  .App-ads-resources {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .App-ads-resources1,
+  .App-ads-resources2 {
+    display: none;
+  }
+
+  .App-display-search {
+    width: 90%;
+    left: 0;
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .App-read-more {
+    width: fit-content;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .App-list-list-list {
+    font-size: 12px;
   }
 }
+
+
 
 
 
