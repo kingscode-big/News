@@ -104,14 +104,14 @@ export default function Header() {
         </div>
       </div>
     </section>
-      {menu && <div className='App-list-overflow'>
+      {menu && <div className='App-list-overflow'> 
                 <ul  className='App-list-hidden-overflow'>
                      <div className='App-dissapear-menu' onClick={handleOut}> <FontAwesomeIcon icon={faXmark} /></div>
-                    <li className='App-profile-overflow' onClick={()=>scrollToElement(Home)} >Latest</li>
-                    <li className='App-profile-overflow' onClick={()=>scrollToElement(About)}>Politics</li>
-                    <li className='App-profile-overflow' onClick={()=>scrollToElement(project)}>Sports</li>
-                    <li className='App-profile-overflow' onClick={()=>scrollToElement(Service)}>Tech</li>
-                    <li className='App-profile-overflow' onClick={()=>scrollToElement(Contact)}>Contact</li>
+                    <li className='App-profile-overflow'><Link to={'/category/latest'} >Latest</Link></li>
+                    <li className='App-profile-overflow'><Link to={'/category/politics'}>politics</Link></li>
+                    <li className='App-profile-overflow'><Link  to={'/category/sports'}>Sports</Link></li>
+                    <li className='App-profile-overflow'><Link   to={'/category/Tech'}>Tech</Link></li>
+                    <li className='App-profile-overflow'> <Link   to={'/category/Entertainment'}>Entertainment</Link></li>
               </ul>
             </div> }
 
