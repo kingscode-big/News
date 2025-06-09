@@ -155,7 +155,7 @@ export default function Posts() {
         </div>
       )} 
    
-        <div className='App-stay-connected'><h1 className='App-words-connected'>Stay Connected</h1> 
+        
                         <div className='App-connection'>
                             <ul className='App-connection-ul' >
                                 <li className='App-text-deco'>  
@@ -180,7 +180,7 @@ export default function Posts() {
                             </ul>
                              
                         </div>
-                        </div>
+                      
         </div>
 
  
