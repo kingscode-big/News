@@ -10,12 +10,35 @@ import iphone6 from '../src/Images/iphone6.webp'
 import News from './components/News'
 import { Link } from 'react-router-dom'
 import Posts from './components/Posts'
+ import {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+} from 'react-share';
+
+
  
 
 export default function Header() {
 
     const[search ,setSearch]=useState( )
     const[result,setResult]=useState('')
+    const[menu ,setMenu]= useState(false)
+
+    const shareUrl = 'https://newslight.netlify.app';
+    const title = 'Check out this news!';
+
+    const handleMenu =()=>{
+      setMenu(true)
+    }
+    const handleOut =()=>{
+      setMenu(false)
+    }
      
     const handleSearch = (e)=>{
      
@@ -57,8 +80,11 @@ export default function Header() {
       <div className=" App-header">
       <h1 className=" App-header-titles-name">TripleNews
       <input className='App-header-search' type='search' placeholder=' search'  onChange={handleSearch} />
+
       </h1>
-     
+       <div className='App-menu-icon'>
+                <div className='App-menu-bar' onClick={handleMenu}   >x</div>
+            </div>
         <div className=" App-header-titles"> 
          <ul className='list-items'>
           <l className='App-header-titles-list'><p className='App-header1'><Link className='App-header1' to={'/category/latest'} >Latest</Link></p> </l>
@@ -70,6 +96,16 @@ export default function Header() {
         </div>
       </div>
     </section>
+      {menu && <div className='App-list-overflow'>
+                <ul  className='App-list-hidden-overflow'>
+                     <div className='App-dissapear-menu' onClick={handleOut}>x</div>
+                    <li className='App-profile-overflow' onClick={()=>scrollToElement(Home)} >Latest</li>
+                    <li className='App-profile-overflow' onClick={()=>scrollToElement(About)}>Politics</li>
+                    <li className='App-profile-overflow' onClick={()=>scrollToElement(project)}>Sports</li>
+                    <li className='App-profile-overflow' onClick={()=>scrollToElement(Service)}>Tech</li>
+                    <li className='App-profile-overflow' onClick={()=>scrollToElement(Contact)}>Contact</li>
+              </ul>
+            </div> }
 
     <section>  
         <div className="App-hero-container">
@@ -106,12 +142,31 @@ export default function Header() {
              <div className='App-stay-connected'><h1 className='App-words-connected'>Stay Connected</h1> 
                 <div className='App-connection'>
                     <ul className='App-connection-ul' >
-                        <li className='App-text-deco'>facebook</li>
-                        <li className='App-text-deco' >Whataspp</li>
-                        <li className='App-text-deco'>Linkedin</li>
-                        <li className='App-text-deco'>Tiktok</li>
+                        <li className='App-text-deco'>  
+                           <FacebookShareButton url={shareUrl} quote={title}>
+                               <FacebookIcon size={32} round />
+                            </FacebookShareButton></li>
+                        <li className='App-text-deco' >
+                           <WhatsappShareButton url={shareUrl} title={title}>
+                              <WhatsappIcon size={32} round />
+                          </WhatsappShareButton>
+                        </li>
+                        <li className='App-text-deco'>
+                          <LinkedinShareButton url={shareUrl} title={title}>
+                                    <LinkedinIcon size={32} round />
+                            </LinkedinShareButton>
+                        </li>
+                        <li className='App-text-deco'>
+                          <TwitterShareButton url={shareUrl} title={title}>
+                             <TwitterIcon size={32} round />
+                          </TwitterShareButton>
+                        </li>
                     </ul>
+                     
                 </div>
+                
+               
+
              </div>
             </div>
  
