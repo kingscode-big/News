@@ -3,6 +3,16 @@ import { useState,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import iphone6 from '../Images/iphone6.webp'
 import { Link } from 'react-router-dom';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+} from 'react-share';
 
  
 
@@ -14,6 +24,10 @@ export default function Posts() {
 
     const[search ,setSearch]=useState('' )
     const[result,setResult]=useState('')
+
+    
+    const shareUrl = 'https://newslight.netlify.app';
+    const title = 'Check out this news!';
         
     const handleSearch = (e)=>{
         
@@ -80,8 +94,7 @@ export default function Posts() {
         </section>
 
 
-         <FontAwesomeIcon icon={faBars} />
-         <FontAwesomeIcon icon={faXmark} />
+         
 
         
     
@@ -142,6 +155,32 @@ export default function Posts() {
         </div>
       )} 
    
+        <div className='App-stay-connected'><h1 className='App-words-connected'>Stay Connected</h1> 
+                        <div className='App-connection'>
+                            <ul className='App-connection-ul' >
+                                <li className='App-text-deco'>  
+                                   <FacebookShareButton url={shareUrl} quote={title}>
+                                       <FacebookIcon size={32} round />
+                                    </FacebookShareButton></li>
+                                <li className='App-text-deco' >
+                                   <WhatsappShareButton url={shareUrl} title={title}>
+                                      <WhatsappIcon size={32} round />
+                                  </WhatsappShareButton>
+                                </li>
+                                <li className='App-text-deco'>
+                                  <LinkedinShareButton url={shareUrl} title={title}>
+                                            <LinkedinIcon size={32} round />
+                                    </LinkedinShareButton>
+                                </li>
+                                <li className='App-text-deco'>
+                                  <TwitterShareButton url={shareUrl} title={title}>
+                                     <TwitterIcon size={32} round />
+                                  </TwitterShareButton>
+                                </li>
+                            </ul>
+                             
+                        </div>
+                        </div>
         </div>
 
  
