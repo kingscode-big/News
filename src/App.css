@@ -480,6 +480,9 @@
   
   
 }
+.App-text-deco{
+  list-style: none;
+}
 .App-display-link-imagessss{
   text-decoration: none;
   color: black;
