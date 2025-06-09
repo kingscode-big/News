@@ -10,6 +10,14 @@ import iphone6 from '../src/Images/iphone6.webp'
 import News from './components/News'
 import { Link } from 'react-router-dom'
 import Posts from './components/Posts'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping,faHouse,faTv,faSackDollar,
+faArrowUpFromBracket,faUsersBetweenLines,faThumbsUp,
+faBolt,faXmark,faLandmark,faMoneyBillTransfer,
+faHeadphones, faUser,faBars,faSquarePhoneFlip,      
+faBookOpen,faComment,faChartSimple,faEnvelope,
+faStar,faImage,faBell,} 
+from '@fortawesome/free-solid-svg-icons' ;
  import {
   FacebookShareButton,
   TwitterShareButton,
@@ -73,7 +81,7 @@ export default function Header() {
 
     }
   return (
-    
+            
     
     <>
     <section>
@@ -83,7 +91,7 @@ export default function Header() {
 
       </h1>
        <div className='App-menu-icon'>
-                <div className='App-menu-bar' onClick={handleMenu}   >x</div>
+                <div className='App-menu-bar' onClick={handleMenu}   ><FontAwesomeIcon icon={faBars} /></div>
             </div>
         <div className=" App-header-titles"> 
          <ul className='list-items'>
@@ -98,7 +106,7 @@ export default function Header() {
     </section>
       {menu && <div className='App-list-overflow'>
                 <ul  className='App-list-hidden-overflow'>
-                     <div className='App-dissapear-menu' onClick={handleOut}>x</div>
+                     <div className='App-dissapear-menu' onClick={handleOut}> <FontAwesomeIcon icon={faXmark} /></div>
                     <li className='App-profile-overflow' onClick={()=>scrollToElement(Home)} >Latest</li>
                     <li className='App-profile-overflow' onClick={()=>scrollToElement(About)}>Politics</li>
                     <li className='App-profile-overflow' onClick={()=>scrollToElement(project)}>Sports</li>

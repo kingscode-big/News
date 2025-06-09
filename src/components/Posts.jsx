@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import iphone6 from '../Images/iphone6.webp'
 import { Link } from 'react-router-dom';
+
  
 
 export default function Posts() {
@@ -79,7 +80,8 @@ export default function Posts() {
         </section>
 
 
-         
+         <FontAwesomeIcon icon={faBars} />
+         <FontAwesomeIcon icon={faXmark} />
 
         
     
