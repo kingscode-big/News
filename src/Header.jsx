@@ -8,6 +8,7 @@ import Topics from './components/Topics'
 import iphone7 from '../src/Images/iphone7.webp'
 import iphone6 from '../src/Images/iphone6.webp'
 import News from './components/News'
+
 import { Link } from 'react-router-dom'
 import Posts from './components/Posts'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -181,6 +182,8 @@ export default function Header() {
              
          </div>
         </div>
+
+ 
 
 
 

@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import iphone6 from '../Images/iphone6.webp'
 import { Link } from 'react-router-dom';
+import Comment from './Comment';
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -152,7 +153,9 @@ export default function Posts() {
               <p className='App-search-item-list'><li>{item.title}</li> </p>
             </Link>
           ))}
+           <Comment />
         </div>
+        
       )} 
    
         
