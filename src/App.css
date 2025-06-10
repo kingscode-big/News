@@ -481,14 +481,21 @@
   
 }
 .App-comments-area{
-   width: 200px;
-   height: 100px;
+   width: 300px;
+   height: 80px;
    border-radius: 5px;
    border: 1px solid black;
 
    padding: 5px;
  
 
+}
+.App-send-comments{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+ margin-top: 10px;
 }
 
 .App-name-area{

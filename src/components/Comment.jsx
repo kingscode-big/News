@@ -10,7 +10,8 @@ export default function Comment() {
         <form>
           <p></p>
             Comment<br></br><textarea type='text' className='App-comments-area'  ></textarea><br></br>
-            Name<br></br><input type='text' placeholder='username' className='App-name-area'></input>
+            Name<br></br><input type='text' placeholder='username' className='App-name-area'></input><br></br>
+            <button className='App-send-comments'>Send</button>
         </form>
       
     </div>
