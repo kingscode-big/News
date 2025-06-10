@@ -151,7 +151,7 @@ export default function Posts() {
           {result.map((item) => (
             <Link  className='App-display-link-imagessss' key={item._id} to={`/api/post/${item._id}`}>
               <p className='App-search-item-list'><li>{item.title}</li> 
-               <Comment />
+              
               
               </p>
 
@@ -163,7 +163,7 @@ export default function Posts() {
         
       )} 
       
-        
+            <Comment />
                         <div className='App-connection'>
                             <ul className='App-connection-ul' >
                                 <li className='App-text-deco'>  
