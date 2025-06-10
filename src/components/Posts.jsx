@@ -153,11 +153,11 @@ export default function Posts() {
               <p className='App-search-item-list'><li>{item.title}</li> </p>
             </Link>
           ))}
-           <Comment />
+      
         </div>
         
       )} 
-   
+       <Comment />
         
                         <div className='App-connection'>
                             <ul className='App-connection-ul' >
