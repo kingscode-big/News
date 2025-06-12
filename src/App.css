@@ -653,6 +653,11 @@
     flex-direction: column;
     
   }
+  .App-posts-latest-image{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
   .App-posts-trend-image{
     box-sizing: border-box;
     margin: 0px;
