@@ -635,7 +635,14 @@
    
  
 
-  .App-hero-side-bar,
+  .App-hero-side-bar{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+    flex-direction: column;
+    height: 100px;
+  }
   .App-hero-side-bar2,
   .App-hero-side-side,
  
