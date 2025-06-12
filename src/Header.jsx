@@ -140,6 +140,10 @@ export default function Header() {
                 <div ><Latest2 /></div>
            </div>
         </div>
+        <div className='App-ads-resouces-list'> Ads space
+           <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
+            </div>
+            <News />
         
         
          <div className="App-hero-items2">
@@ -201,14 +205,12 @@ export default function Header() {
               <News />
               </div>  
               <div className='App-display'>
-              <News />
+               
               </div> 
               <div className='App-posts-ads'>
                 <div className='App-ads-resouces-container'>
                     <div className='App-ads-resources'>
-                        <div className='App-ads-resouces-list'> Ads space
-                            <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
-                        </div>
+                         
                         
                         <div className='App-ads-resouces-list'>Ads spcae
                         <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
