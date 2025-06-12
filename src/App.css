@@ -580,6 +580,7 @@
     flex-direction: column;
     margin: 0px;
     box-sizing: border-box;
+    margin-top: 2px;
   }
 
   .App-header-titles,
@@ -657,7 +658,8 @@
     width: 100%;
     padding: 0px;
     margin: 0px;
-    padding-right: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .App-posts-trend-image{
     box-sizing: border-box;
