@@ -558,7 +558,7 @@
   padding: 15px;
   list-style: none;
  }
-.App-menu-icon{
+.App-menu-bar{
   display: none;
 }
 
@@ -574,6 +574,10 @@
   .App-header-search {
     width: 100%;
     margin: 10px 0;
+  }
+  .App-bottom-bottom-container{
+    display: flex;
+    flex-direction: column;
   }
 
   .App-header-titles,
@@ -630,7 +634,7 @@
   .App-hero-side-bar,
   .App-hero-side-bar2,
   .App-hero-side-side,
-  .App-hero-bottom-container,
+ 
   .App-hero-bottom-side,
   .App-popular-topics,
   .App-popular-News-all,
@@ -652,18 +656,7 @@
     width: 380px;
     
   }
-   
-
-  .App-posts-displaty-image,
-  .App-posts-latest-image,
-   
-  .App-display-News-image {
-    width: 100%;
-    height: 200px;
-    margin: 0px;
-    box-sizing: border-box;
-    margin-top: 3px;
-  }
+    
 
   .App-footer-surrounds {
     width: 100%;

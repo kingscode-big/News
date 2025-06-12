@@ -90,9 +90,6 @@ export default function Header() {
       <h1 className=" App-header-titles-name">TripleNews
          
                 <div className='App-menu-bar' onClick={handleMenu}   ><FontAwesomeIcon icon={faBars} /></div>
-         
-      
-
       </h1>
        <input className='App-header-search' type='search' placeholder=' search'  onChange={handleSearch} />
        
@@ -136,8 +133,11 @@ export default function Header() {
          <BlogPosts/>
          </div>
              <div className='App-bottom-bottom-container'>
-                <div className='App-hero-bottom-side'> <Latest /></div>
-                <div className='App-hero-bottom-side'><Latest2 /></div>
+                <div > <Latest /></div>
+                 
+                  <br></br>
+                
+                <div ><Latest2 /></div>
            </div>
         </div>
         
@@ -209,9 +209,7 @@ export default function Header() {
                         <div className='App-ads-resouces-list'> Ads space
                             <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
                         </div>
-                        <div className='App-ads-resouces-list'>Ads space
-                        <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
-                        </div>
+                        
                         <div className='App-ads-resouces-list'>Ads spcae
                         <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
                         </div>
