@@ -88,12 +88,14 @@ export default function Header() {
     <section>
       <div className=" App-header">
       <h1 className=" App-header-titles-name">TripleNews
-      <input className='App-header-search' type='search' placeholder=' search'  onChange={handleSearch} />
+         
+                <div className='App-menu-bar' onClick={handleMenu}   ><FontAwesomeIcon icon={faBars} /></div>
+         
+      
 
       </h1>
-       <div className='App-menu-icon'>
-                <div className='App-menu-bar' onClick={handleMenu}   ><FontAwesomeIcon icon={faBars} /></div>
-            </div>
+       <input className='App-header-search' type='search' placeholder=' search'  onChange={handleSearch} />
+       
         <div className=" App-header-titles"> 
          <ul className='list-items'>
           <l className='App-header-titles-list'><p className='App-header1'><Link className='App-header1' to={'/category/latest'} >Latest</Link></p> </l>
