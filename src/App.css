@@ -608,6 +608,10 @@
     color: black;
     display: inline;
   }
+   .App-posts-pop-image{
+    display: flex;
+    flex-direction: column;
+   }
 
   .App-hero-items0{
     display: none;
@@ -639,13 +643,20 @@
      display: none;
     
   }
+   .App-posts-pop-images{
+    width: 100%;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+   }
   .App-hero-side-bar2,
   .App-hero-side-side,
  
   .App-hero-bottom-side,
   .App-popular-topics,
   .App-popular-News-all,
-  .App-posts-pop-images,
+  
   .App-display-News-sidebar,
   .App-display-News1,
   .App-display-News2,
