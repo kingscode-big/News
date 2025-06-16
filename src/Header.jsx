@@ -7,6 +7,7 @@ import Trending from './components/Trending'
 import Topics from './components/Topics'
 import iphone7 from '../src/Images/iphone7.webp'
 import iphone6 from '../src/Images/iphone6.webp'
+import image from  '../src/Images/image.png'
 import News from './components/News'
 
 import { Link } from 'react-router-dom'
@@ -87,7 +88,7 @@ export default function Header() {
     <>
     <section>
       <div className=" App-header">
-      <h1 className=" App-header-titles-name">TripleNews
+      <h1 className=" App-header-titles-name"> <i>Triple_update</i>
          
                 <div className='App-menu-bar' onClick={handleMenu}   ><FontAwesomeIcon icon={faBars} /></div>
       </h1>
@@ -102,7 +103,17 @@ export default function Header() {
           <l className='App-header-titles-list'> <p className='App-header1'><Link className='App-header1'  to={'/category/Entertainment'}>Entertainment</Link></p></l>
          </ul>
         </div>
+        <div>
+          <p className='App-header-header'><i></i> Welcome  @ Triple_update</p>
+          <p className='App-header-header1'><i></i>  We  share news info happening around the world  , Gossip and junkies...
+          <img className='App-smiling-emoji' src={image}  /><img className='App-smiling-emoji' src={image}  /></p>
+
+        </div>
+
+      
+      
       </div>
+      
     </section>
       {menu && <div className='App-list-overflow'> 
                 <ul  className='App-list-hidden-overflow'>
@@ -127,6 +138,9 @@ export default function Header() {
               
                   
             </div>
+
+             
+
          <div className="App-hero-items1">
          <div className="App-hero-side-side">
          
@@ -215,19 +229,13 @@ export default function Header() {
                         <div className='App-ads-resouces-list'>Ads spcae
                         <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
                         </div>
-                        <div className='App-ads-resouces-list'>Ads space
-                        <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
-                        </div>
+                         
                     </div>
                     <div className='App-ads-resources1'>
                     <Latest />
-                    <Latest2 /></div>
-                    <div className='App-ads-resources2'>
-                                     <img   className='App-sidebar-Ads1' src={iphone6} alt="" />
-                       <button className='App-newest-iphone1'>Check Out Newest Iphone </button>
-                     
+                   
                     </div>
-                </div>
+                 
                 
               </div> 
               <div className='App-footer-surrounds'>
@@ -270,7 +278,8 @@ export default function Header() {
                     <input type='text' className='Appp-input-info'></input>
                 </div>
                 
-             </div>   
+             </div> 
+             </div>  
     
         
                  

@@ -62,15 +62,7 @@ export default function Category() {
                 <div className='App-ads-resouces-list'> Ads space
                      <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
                  </div>
-                <div className='App-ads-resouces-list'> Ads space
-                     <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
-                 </div>
-                <div className='App-ads-resouces-list'> Ads space
-                     <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
-                 </div>
-                <div className='App-ads-resouces-list'> Ads space
-                     <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
-                 </div>
+                 
                 </div>
         
                 <div className='App-display-News2'>

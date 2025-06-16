@@ -565,15 +565,34 @@
 
 @media screen and (max-width: 400px) {
   .App-header {
-    height: auto;
+    height: 200px;
     padding: 10px;
     flex-direction: column;
     position: static;
+    background-color: rgb(63, 21, 21);
   }
 
   .App-header-search {
     width: 100%;
     margin: 10px 0;
+  }
+  .App-header-header1{
+    text-align: center;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(170, 165, 165);
+    font-size: 15px;
+  }
+  .App-header-header{
+    text-align: center;
+       color: rgb(170, 165, 165);
+    font-weight: 600;
+    
+  }
+  .App-smiling-emoji{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
   }
   .App-bottom-bottom-container{
     display: flex;
@@ -595,6 +614,8 @@
   .App-hero-container {
     flex-direction: column;
     height: auto;
+   
+ 
   }
   .App-menu-icon{
     display: inline;
@@ -689,7 +710,7 @@
     padding: 2px;
     display: flex;
     font: 15px;
-    margin-top: 5px;
+    
     border-radius: 10px;
   }
 
