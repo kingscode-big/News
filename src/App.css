@@ -664,6 +664,13 @@
      display: none;
     
   }
+  .App-display-News-image {
+    width: 90%;
+    height: 180px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    margin-left: 50px;
+  }
    .App-posts-pop-images{
     width: 100%;
     margin: 0px;
