@@ -147,7 +147,7 @@ export default function Header() {
          <BlogPosts/>
          </div>
              <div className='App-bottom-bottom-container'>
-                <div > <Latest /></div>
+                
                  
                   <br></br>
                 
@@ -157,7 +157,7 @@ export default function Header() {
         <div className='App-ads-resouces-list'> Ads space
            <div className='App-ads-resouces-list1'> Get 60% Discount on your Recharge Airtel</div>
             </div>
-            <News />
+          
         
         
          <div className="App-hero-items2">
@@ -232,7 +232,7 @@ export default function Header() {
                          
                     </div>
                     <div className='App-ads-resources1'>
-                    <Latest />
+               
                    
                     </div>
                  
